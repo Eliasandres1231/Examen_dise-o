@@ -235,3 +235,50 @@ footer {
 .hidden {
     display: none !important;
 }
+
+/* Estilos para el carrusel */
+.slideshow-container {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 320px;
+    max-height: 500px; /* Ajusta este valor según tus necesidades */
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #f3f3f3, #ffffff);
+    padding: 20px;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.mySlides {
+    flex: 0 0 calc(100% / 3);
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySlides img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mySlides img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
